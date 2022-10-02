@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .background-img {
+        background-image: url(img/paykar.jpg);
+        height: 750px;
+    }
+
+    .background {
+        height: 750px;
+        background: rgba(51, 56, 199, 0.543);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+        height: 460px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .form-logo {
+        display: flex;
+        justify-content: center;
+    }
+    #linkButton{
+        text-decoration: none;
+        color: white;
+    }
+    #logo_link{
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+    <section class="container-fluid">
+        <div class="background-img">
+            <div class="background">
+                <div class="card">
+                    <form class="form">
+                        <h1 class="form-logo">
+                            <a href="form.html" id="logo_link">Paykar</a>
+                        </h1>
+                        <div class="form-group">
+                            <label for="exampleInputText"></label>
+                            <input type="text" class="form-control" id="exampleInputText" aria-describedby="emailHelp"
+                                placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputTel1"></label>
+                            <input type="tel" class="form-control" id="exampleInputTeld1"
+                                placeholder="Номер моб. телефона">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1"></label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Новый пароль">
+                        </div>
+                        <div class="form-group">
+                                <button id="UserButton" type="submit"
+                                    class="btn btn-primary form-control mt-4"><a id="linkButton" href="#">Регистрация</a>
+                                </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/user.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
